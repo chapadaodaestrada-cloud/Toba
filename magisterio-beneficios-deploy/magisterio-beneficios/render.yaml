@@ -1,5 +1,3 @@
-# Blueprint do Render: um único serviço gratuito (API + site).
-# O banco fica no Neon (gratuito); veja docs/DEPLOY-GRATUITO.md.
 services:
   - type: web
     name: magisterio-beneficios
@@ -19,19 +17,14 @@ services:
       - key: COOKIE_SECURE
         value: "true"
       - key: DEMO_MODE
-        value: "true"          # mostra o aviso de "dados demonstrativos"; use false em produção real
+        value: "true"
       - key: UPLOAD_DIR
-        value: ./uploads        # disco do plano gratuito é efêmero: uploads somem ao reiniciar
+        value: ./uploads
       - key: JWT_USER_SECRET
         generateValue: true
       - key: JWT_ADMIN_SECRET
         generateValue: true
       - key: DATABASE_URL
-        sync: false             # string de conexão DIRETA do Neon (sem "-pooler")
+        sync: false
       - key: CORS_ORIGIN
-        sync: false             # https://SEU-SERVICO.onrender.com
-
-
-
-       plan: free
-       rootDir: magisterio-beneficios
+        sync: false
