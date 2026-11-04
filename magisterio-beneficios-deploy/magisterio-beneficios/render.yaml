@@ -30,3 +30,8 @@ services:
         sync: false             # string de conexão DIRETA do Neon (sem "-pooler")
       - key: CORS_ORIGIN
         sync: false             # https://SEU-SERVICO.onrender.com
+
+
+
+       plan: free
+       rootDir: magisterio-beneficios
