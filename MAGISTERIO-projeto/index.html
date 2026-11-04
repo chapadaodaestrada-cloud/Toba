@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b2447">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="MAGISTÉRIO">
+<meta name="format-detection" content="telephone=no">
+<title>MAGISTÉRIO · Portal do Magistério (demonstração)</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<section id="login">
+  <div class="lhero">
+    <div class="logo">MAGIST<b>É</b>RIO</div>
+    <div class="anim"><div class="bar"></div><h2>Valorização e cuidado com quem ensina.</h2><p>Protótipo visual de um portal institucional para professores e aposentados. Todo o conteúdo é fictício.</p></div>
+    <small>Demonstração visual independente · Sem vínculo com órgãos públicos</small>
+  </div>
+  <div class="lform">
+    <div class="box anim">
+      <h1>Portal do Magistério</h1>
+      <p class="sub">Área de acesso para professores e aposentados.</p>
+      <form id="lf" autocomplete="off" onsubmit="return false">
+        <label for="u">Nome de usuário</label>
+        <div class="fld"><span id="iu"></span><input id="u" type="text" placeholder="Digite seu nome de usuário"></div>
+        <label for="p">Senha</label>
+        <div class="fld"><span id="ip"></span><input id="p" type="password" placeholder="Digite sua senha"><button type="button" id="eye" aria-label="Mostrar ou ocultar senha"></button></div>
+        <div class="err" id="err"></div>
+        <button class="btn" id="go" type="submit">ACESSAR PORTAL</button>
+      </form>
+      <div class="note"><b>Modo demonstrativo:</b> qualquer nome e senha são aceitos. Nada é enviado ou armazenado. Não digite senhas reais.</div>
+    </div>
+    <p class="lfoot">MAGISTÉRIO · Protótipo fictício · Rua Exemplo, 1000, Cidade Modelo · CNPJ fictício 00.000.000/0000-00 · contato@exemplo.invalid</p>
+  </div>
+</section>
+
+<div id="app" class="hidden">
+  <div class="scrim" id="scrim"></div>
+  <nav class="bn" id="bn"></nav>
+  <aside id="side">
+    <div class="logo">MAGIST<b>É</b>RIO<small>Portal do Magistério</small></div>
+    <nav id="nav"></nav>
+    <div class="out"><nav><button id="lo"></button></nav></div>
+  </aside>
+  <main>
+    <header class="top">
+      <button class="burger" id="bg" aria-label="Abrir menu"></button>
+      <div class="logo">MAGIST<b>É</b>RIO</div>
+      <div class="sp"></div>
+      <div class="who" id="who"></div>
+      <div class="av" id="av"></div>
+    </header>
+    <div class="demo"><b>Demonstração visual independente.</b> Os valores exibidos são fictícios e não representam benefícios reais ou valores a receber.</div>
+    <div id="view"></div>
+    <footer>MAGISTÉRIO · Protótipo visual sem vínculo com qualquer órgão público · Todos os dados são fictícios · © 2026</footer>
+  </main>
+</div>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
