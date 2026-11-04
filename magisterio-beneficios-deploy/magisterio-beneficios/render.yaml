@@ -3,6 +3,7 @@ services:
     name: magisterio-beneficios
     runtime: node
     plan: free
+    rootDir: magisterio-beneficios-deploy/magisterio-beneficios
     healthCheckPath: /api/health
     autoDeploy: true
     buildCommand: >-
